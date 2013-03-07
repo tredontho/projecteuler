@@ -6,7 +6,6 @@ import Control.Monad (guard)
 import Data.List (nub)
 
 -- |Just the divisors of an integer, not including itself or 1 for our purposes
---divisors :: Int -> [Int]
 divisors :: Integer -> [Integer]
 divisors k = nub $ (fst lists) ++ (snd lists)
     where 
