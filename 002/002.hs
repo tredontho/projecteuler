@@ -9,6 +9,6 @@ evenFibs :: [Int]
 evenFibs = filter (\(p) -> p `mod` 2 == 0) fib
 
 answer :: Int
-answer = sum $ takeWhile (\x -> x <= 4000000) evenFibs
+answer = sum $ takeWhile (<= 4000000) evenFibs
 
 main = print answer

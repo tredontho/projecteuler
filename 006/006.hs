@@ -2,7 +2,7 @@ module Main
 
 where
 
-square = \x -> x*x
+square x = x*x
 
 sumOfSquares = sum .  map square
 
